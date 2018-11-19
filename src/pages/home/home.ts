@@ -13,14 +13,22 @@ export class HomePage {
 
    plus() {
        this.num++;
-         }
+  }
 
-	   minus() {
-	       this.num--;
-	         }
+	 minus() {
+     this.num--;
+	 }
 
-		   reset() {
-		       this.num = 0;
-		         }
+   times(){
+     this.num *= 2;
+     }
+
+   devided(){
+     this.num /= 2;
+   }
+
+   reset() {
+     this.num = 0;
+	  }
 
 }
