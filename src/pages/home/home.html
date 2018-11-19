@@ -1,14 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      カウントアプリ
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+	<div>
+		<p align="center">{{num}}</p>
+	</div>
+	<ion-buttons>
+		<button ion-button block round (click)="plus()">プラス</button>
+		    <button ion-button block round (click)="minus()">マイナス</button>
+		        <button ion-button block round color="danger" (click)="reset()">リセット</button>
+ </ion-buttons>
 </ion-content>
